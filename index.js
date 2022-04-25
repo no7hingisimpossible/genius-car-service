@@ -33,6 +33,10 @@ async function run(){
             const result = await serviceCollection.findOne(query)
             res.send(result); 
         })
+
+        app.get('/hero', (req, res) => {
+            res.send('hero meets hero ku')
+        })
         
 
         app.post('/service', async(req, res) => {
